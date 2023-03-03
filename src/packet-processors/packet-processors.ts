@@ -19,6 +19,7 @@ import { cFDutyInfo } from "./processors/cFDutyInfo";
 import { cFPlayerInNeed } from "./processors/cFPlayerInNeed";
 import { cFRegisterDuty } from "./processors/cFRegisterDuty";
 import { charaVisualEffect } from "./processors/charaVisualEffect";
+import { chatHandler } from "./processors/chatHandler";
 import { clientTrigger } from "./processors/clientTrigger";
 import { containerInfo } from "./processors/containerInfo";
 import { craftingLog } from "./processors/craftingLog";
@@ -105,6 +106,7 @@ export const packetProcessors: Record<string, PacketProcessor> = {
 	cFPlayerInNeed,
 	cFRegisterDuty,
 	charaVisualEffect,
+	chatHandler,
 	clientTrigger,
 	containerInfo,
 	craftingLog,

@@ -19,6 +19,7 @@ import { CFDutyInfo } from "../definitions";
 import { CFPlayerInNeed } from "../definitions";
 import { CFRegisterDuty } from "../definitions";
 import { CharaVisualEffect } from "../definitions";
+import { ChatHandler } from "../definitions";
 import { ClientTrigger } from "../definitions";
 import { ContainerInfo } from "../definitions";
 import { CraftingLog } from "../definitions";
@@ -172,6 +173,10 @@ export interface CFRegisterDutyMessage extends GenericMessage<CFRegisterDuty> {
 
 export interface CharaVisualEffectMessage extends GenericMessage<CharaVisualEffect> {
 	type: "charaVisualEffect";
+}
+
+export interface ChatHandlerMessage extends GenericMessage<ChatHandler> {
+	type: "chatHandler";
 }
 
 export interface ClientTriggerMessage extends GenericMessage<ClientTrigger> {
@@ -572,6 +577,7 @@ export type Message =
 	| CFPlayerInNeedMessage
 	| CFRegisterDutyMessage
 	| CharaVisualEffectMessage
+	| ChatHandlerMessage
 	| ClientTriggerMessage
 	| ContainerInfoMessage
 	| CraftingLogMessage
